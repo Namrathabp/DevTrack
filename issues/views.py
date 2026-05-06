@@ -86,5 +86,3 @@ def manage_issues(request):
             issues = [i for i in issues if i['status'] == status_filter]
             
         return JsonResponse(issues, safe=False)
-
-# Create your views here.
